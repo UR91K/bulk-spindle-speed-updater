@@ -1,0 +1,22 @@
+[package]
+name = "spindle_speed_manager"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+eframe = { version = "0.22.0", features = ["persistence"] }
+winapi = { version = "0.3", features = ["winuser"] }
+egui = "0.22.0"
+log = "0.4"
+thiserror = "1.0"
+tokio = { version = "1.28", features = ["full"] }
+futures = "0.3"
+walkdir = "2.3"
+env_logger = "0.10"
+
+[target.'cfg(windows)'.build-dependencies]
+winres = "0.1"
+
+[[bin]]
+name = "spindle_speed_manager"
+path = "src/main.rs"
