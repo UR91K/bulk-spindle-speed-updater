@@ -15,7 +15,8 @@ It works by modifying the S command near the beginning of .tap each tap file.
 
 ## Building
 I didn't do much special with the build, just run something to this effect:
-```cargo build --package spindle_speed_manager --bin spindle_speed_manager --release```
+``cargo build --package spindle_speed_manager --bin spindle_speed_manager --release``
+Note: you must have VC runtime installed to use my provided binaries
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first.
